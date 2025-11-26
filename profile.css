@@ -1,0 +1,104 @@
+body {
+    display: flex;
+}
+
+header {
+    width: 240px;
+    border-right: 1px solid #ccc;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*プロフィールカード-----------------------------------------*/
+.profile-card {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*アイコン*/
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+/*ユーザー情報*/
+.user-info {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.btn-area {
+    display: flex;
+    margin: 10px 0;
+    gap: 10px ;
+}
+
+.btn-area-kind {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #c7c3c3;
+    border-radius: 5px;
+}
+
+.btn-area-kind:hover {
+    background-color: #9c9898;
+}
+
+
+/*アーカイブ-------------------------------------------------------*/
+.post-archive {
+    display: flex;
+    margin: 10px;
+}
+
+.archive-icon {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #bcb6b6;
+}
+
+/*一覧選択-----------------------------------------------*/
+.post-kind {
+    display: flex;
+    margin: 10px;
+}
+
+.post-kind-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+
+/*投稿一覧------------------------------------------------------------*/
+.post-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.post-list-item {
+    width: calc(33.33% - 10px);
+    height: 200px;
+    position: relative;
+    border: 1px solid #ccc;
+}
